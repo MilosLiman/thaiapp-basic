@@ -167,8 +167,6 @@ function trainingPrice(){
 
     var selectedTr_value = selectedTr.value;
 
-    //const price = document.querySelector('.price-title');
-
     if(selectedTr_value == 'recreative' && duration_value == 'week'){
         trPrice = recreative_1w;
 
@@ -187,33 +185,6 @@ function trainingPrice(){
     }
 
     price.innerHTML = trPrice;
-    //return parseInt(trPrice);
 }
 
 trainingPrice();
-
-// var duration_t = new Array();
-// duration_t["week"] = 1;
-// duration_t["month"] = 2;
-
-// function duration(){
-
-//     var duration = 0;
-//     const selectedDuration = general.elements['duration'];
-
-//     duration = duration_t[selectedDuration.value];
-
-//     return duration;
-
-// }
-
-
-// function totalPrice(){
-    
-//      var totalPr = 0;
-
-//      totalPr = trainingPrice() * duration();
-
-//     price.innerHTML = totalPr;
-
-// }
